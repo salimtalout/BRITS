@@ -1,10 +1,17 @@
 # README
 
-To train the BRIST model, first please unzip the PhysioNet data into ***raw*** folder, including the label file ***Outcomes-a.txt***.
+## Prepare stage
+* make three folders named ***raw***, ***json***, and ***result***
+* unzip PhysioNet (test-a.zip) and the label file ***Outcomes-a.txt*** into raw folder
+* run input_process.py to generate the input file of NN
 
-To run the model:
-* make a empty folder named ***json***, and run inpute_process.py.
-* run different models:
-    * e.g., RITS_I: python main.py --model rits_i --epochs 1000 --batch_size 64 --impute_weight 0.3 --label_weight 1.0 --hid_size 108
-    * for most cases, using impute_weight=0.3 and label_weight=1.0 lead to a good performance. Also adjust hid_size to control the number of parameters
+## Non-RNN methods
+* run baseline_methods.py
 
+## RNN-based methods
+The rnn-based methods contain several parameters. Besides the epochs and batch size, we use ***hid_size*** to control the number of parameters and ***impute_weight***/***label_weight***. For example, to train RITS_I, run
+```
+python main.py --model rits_i --epochs 1000 --batch_size 64 --impute_weight 0.3 --label_weight 1.0 --hid_size 108
+```
+
+The imputed results will be saved in ***result*** folder. Based on the imputations, we could run lightgbm to do the two-stage test.
