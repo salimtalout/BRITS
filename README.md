@@ -1,8 +1,9 @@
 # README
 
 ## Prepare stage
+* Install requirements for python2
 * make three folders named ***raw***, ***json***, and ***result***
-* unzip PhysioNet (test-a.zip) and the label file ***Outcomes-a.txt*** into raw folder
+* unzip PhysioNet ([test-a.zip](https://physionet.org/physiobank/database/challenge/2012/set-a.zip)) and the label file [***Outcomes-a.txt***](https://physionet.org/physiobank/database/challenge/2012/Outcomes-a.txt) into raw folder.
 * run input_process.py to generate the input file of NN
 
 ## Non-RNN methods
