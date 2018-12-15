@@ -1,7 +1,7 @@
 import xgboost as xgb
 import numpy as np
 
-model_name = 'm_rnn'
+model_name = 'rits_i'
 
 impute = np.load('./{}_data.npy'.format(model_name)).reshape(-1, 48 * 35)
 label = np.load('./{}_label.npy'.format(model_name))
@@ -28,7 +28,7 @@ bst = xgb.train(param, dtrain, num_round, evallist)
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
 
-model = LogisticRegression().fit(data[:n_train], label[:n_train])
+model = LogisticRegression().fit(data[:n_train], label[:n_train].ravel())
 pred = model.predict_proba(data[n_train:])
 
 from ipdb import set_trace
