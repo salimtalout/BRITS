@@ -32,3 +32,5 @@ La mesure de performance est effectuée dans le main. Elle se base principalemen
 
 ![_Mean Relative Error_](https://latex.codecogs.com/gif.latex?MRE%3D%20%5Cfrac%7B%5Csum%20_i%20%7Cpred_i%20-%20label_i%20%7C%7D%7B%5Csum%20_i%20%7Clabel_i%7C%7D)
 
+### Résultats:
+
