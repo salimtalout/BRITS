@@ -2,3 +2,5 @@
 json
 raw
 result/*.npy
+
+*.pdf
