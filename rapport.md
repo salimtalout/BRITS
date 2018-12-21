@@ -28,6 +28,7 @@ Les modèles de _Machine_Learning_ classique sont entraînés via la librairie _
 
 #### La mesure de performance:
 La mesure de performance est effectuée dans le main. Elle se base principalement sur deux métriques: la _MAE_ et la _MRE_.
-![](https://latex.codecogs.com/gif.latex?MAE%3D%20%5Cfrac%7B%5Csum%20_i%20%7Cpred_i%20-%20label_i%20%7C%7D%7BN%7D)
-![](https://latex.codecogs.com/gif.latex?MRE%3D%20%5Cfrac%7B%5Csum%20_i%20%7Cpred_i%20-%20label_i%20%7C%7D%7B%5Csum%20_i%20%7Clabel_i%7C%7D)
+![_Mean Average Error_](https://latex.codecogs.com/gif.latex?MAE%3D%20%5Cfrac%7B%5Csum%20_i%20%7Cpred_i%20-%20label_i%20%7C%7D%7BN%7D)
+
+![_Mean Relative Error_](https://latex.codecogs.com/gif.latex?MRE%3D%20%5Cfrac%7B%5Csum%20_i%20%7Cpred_i%20-%20label_i%20%7C%7D%7B%5Csum%20_i%20%7Clabel_i%7C%7D)
 
