@@ -34,6 +34,12 @@ La mesure de performance est effectuée dans le main. Elle se base principalemen
 
 ### Jeu de données:
 
+Les modèles sont évalués sur 3 datasets. 
+
+ * Air Quality: Mesures de la qualité de l'air faite à Pékin. 13.3% des données sont manquantes. 
+ * Healthcare data: Données à 4000 variables contenant les informations biologiques de patient en salle d'opérations. 78% des valeurs sont manquantes, les données sont donc extrêmement creuse. La tache de prédiction consiste à déterminer si le patient survit ou non à l'opération. 
+ * Human Activity: Mesures de capteurs sur des humains effectuant des tâches quotidiennes. La tâche de prédiction consiste à déterminer l'action en cours. 
+
 ### Résultats:
 Voici les résultats obtenus par les différents algorithmes sur les jeux de données décrits au dessus:
 
@@ -46,3 +52,6 @@ Voici les résultats obtenus par les différents algorithmes sur les jeux de don
  Enfin, même pour les tâches de classification, BRITS est le meilleur algortihme, validant la méthode. 
  
  ![](Results2.png)
+ 
+ ## Conclusion: 
+ Les tests expérimentaux valident l'intêret de la méthode BRITS: celle ci obtient en effet de meilleurs performances que toutes les autres méthodes testées sur les 3 jeux de données. Il conviendra cependant de faire valider cette méthode sur d'autres jeux de données. 
