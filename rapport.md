@@ -44,3 +44,5 @@ Voici les résultats obtenus par les différents algorithmes sur les jeux de don
  On remarque que, sans surprises, remplacer en faisant simplement la moyenne est très mauvais. C'est un peu mieux si on choisit les K plus proches voisins et qu'on fait la moyenne avec. De plus, BRITS est le meilleur modèle sur tous les jeux de données, battant l'ancien état de l'art _STMVL_ sur le jeu de données "Air Quality" et écransant les solutions _baseline_ sur les autres jeu de données. Enfin BRITS dépasse BRITS-I sur tous les jeux, mais est parfois très proche comme sur le jeu "Air Quality" pouvant illustrer que les données ne sont pas spatialement corréllées pour ce jeu de données. 
  
  Enfin, même pour les tâches de classification, BRITS est le meilleur algortihme, validant la méthode. 
+ 
+ ![](Results2.png)
