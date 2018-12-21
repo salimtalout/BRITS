@@ -32,5 +32,13 @@ La mesure de performance est effectuée dans le main. Elle se base principalemen
 
 ![](https://latex.codecogs.com/gif.latex?MRE%3D%20%5Cfrac%7B%5Csum%20_i%20%7Cpred_i%20-%20label_i%20%7C%7D%7B%5Csum%20_i%20%7Clabel_i%7C%7D)
 
-### Résultats:
+### Jeu de données:
 
+### Résultats:
+Voici les résultats obtenus par les différents algorithmes sur les jeux de données décrits au dessus:
+
+ ![](Results1.png)
+ 
+ Ici, la tâche est simplement la recréation des jeux de données en remplissant les trous dans les jeux de données. 
+ 
+ On remarque que, sans surprises, remplacer en faisant simplement la moyenne est très mauvais. C'est un peu mieux si on choisit les K plus proches voisins et qu'on fait la moyenne avec. 
