@@ -35,11 +35,11 @@ Pour cette méthode, supposons qu’à l’étape ![t](https://latex.codecogs.co
 
 À l’étape t, si ![xt](https://latex.codecogs.com/gif.latex?x_t) est observé, on l’utilise pour valider l'imputation, et donc mettre à jour les poids du réseau. Dans le cas contraire, étant donné que les futures observations sont corrélées avec la valeur actuelle, on remplace ![xt](https://latex.codecogs.com/gif.latex?x_t) par l'imputation obtenue, et on la valide grâce aux observations suivantes.
 
-![ritsi](img/RITS-I.png)
+<img src="img/RITS-I.png" alt="drawing" width="600"/>
 
 #### Algorithme
 
-![algo](img/Algo_RITS-I.png)
+<img src="img/Algo_RITS-I.png" alt="drawing" width="400"/>
 
 Tout d'abord,  on calcule l’estimation ![xt](https://latex.codecogs.com/gif.latex?x_t).
 Ensuite, on calcule ![xtc](https://latex.codecogs.com/gif.latex?x_t%5Ec), qui prend ![xt](https://latex.codecogs.com/gif.latex?x_t) dans le cas où l’on a la mesure, ou ![xt^](https://latex.codecogs.com/gif.latex?%5Chat%7Bx%7D_t) sinon.
@@ -47,11 +47,11 @@ Ensuite, on calcule ![xtc](https://latex.codecogs.com/gif.latex?x_t%5Ec), qui pr
 On prédit l’état ![t](https://latex.codecogs.com/gif.latex?t) en fonction des étapes précédentes.
 Ensuite, on calcule l’erreur estimée à partir de l’erreur absolue moyenne.
 
-![pred](img/pred_RITS-I.png)
+<img src="img/pred_RITS-I.png" alt="drawing" width="150"/>
 
 Enfin, on obtient la prédiction ![y^](https://latex.codecogs.com/gif.latex?%5Chat%7By%7D).
 
-![loss](img/loss_RITS-I.png)
+<img src="img/loss_RITS-I.png" alt="drawing" width="200"/>
 
 On fait ensuite la mise à jour en minimisant la loss accumulée.
 
@@ -93,15 +93,15 @@ L’idée, pour les prochaines méthodes, RITS et BRITS, est d’estimer grâce 
 
 Donc dans l’algorithme, cela se traduit par l’ajout d’une estimation qui dépend des autres features (mesures voisines).
 
-![zt](img/zt.png)
+<img src="img/zt.png" alt="drawing" width="150"/>
 
 Ainsi, il faut ajouter une estimation qui combine les deux autres :  l’estimation qui dépend de l’historique, mais aussi celle qui dépend des mesures voisines.
 
-![ct](img/ct.png)
+<img src="img/ct.png" alt="drawing" width="300"/>
 
 Enfin, il faut modifier l’erreur estimée, pour qu’elle prenne en compte ces deux nouvelles estimations.
 
-![lt](img/lt.png)
+<img src="img/lt.png" alt="drawing" width="350"/>
 
 ## Partie expérimentale
 
@@ -147,7 +147,7 @@ Les modèles sont évalués sur 3 datasets.
 
 Voici les résultats obtenus par les différents algorithmes sur les jeux de données décrits au dessus:
 
-![res1](img/Results1.png)
+<img src="img/Results1.png" alt="drawing" width="700"/>
 
 Ici, la tâche est simplement la recréation des jeux de données en remplissant les trous dans les jeux de données. Les métriques sont _MAE_ et _MRE_ en pourcentage.
 
@@ -155,7 +155,7 @@ On remarque que, sans surprises, remplacer en faisant simplement la moyenne est 
 
 Enfin, même pour les tâches de classification, BRITS est le meilleur algortihme, validant la méthode.
 
-![res2](img/Results2.png)
+<img src="img/Results2.png" alt="drawing" width="700"/>
 
 ## Conclusion
 
